@@ -364,8 +364,8 @@ ul {
 
 .hero {
   position: relative;
-  background-image: -webkit-image-set(url("../../img/hero-bg.avif") type("image/avif"), url("../../img/hero-bg.webp") type("image/webp"), url("../../img/hero-bg.jpg") type("image/jpg"));
-  background-image: image-set(url("../../img/hero-bg.avif") type("image/avif"), url("../../img/hero-bg.webp") type("image/webp"), url("../../img/hero-bg.jpg") type("image/jpg"));
+  background-image: -webkit-image-set(url("../img/hero-bg.avif") type("image/avif"), url("../img/hero-bg.webp") type("image/webp"), url("../img/hero-bg.jpg") type("image/jpg"));
+  background-image: image-set(url("../img/hero-bg.avif") type("image/avif"), url("../img/hero-bg.webp") type("image/webp"), url("../img/hero-bg.jpg") type("image/jpg"));
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
