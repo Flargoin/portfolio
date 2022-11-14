@@ -10,7 +10,6 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/menu */ "./src/js/components/menu.js");
-/* harmony import */ var _components_menu__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_menu__WEBPACK_IMPORTED_MODULE_0__);
 
 
 /***/ }),
@@ -128,7 +127,13 @@ __webpack_require__.r(__webpack_exports__);
   windowEl: window,
   documentEl: document,
   htmlEl: document.documentElement,
-  bodyEl: document.body
+  bodyEl: document.body,
+  $hamburger: document.querySelector('.hero__hamburger'),
+  $menu: document.querySelector('.menu'),
+  $overlay: document.querySelector('.menu__overlay'),
+  $menuClose: document.querySelector('.menu__close'),
+  $body: document.querySelector('body'),
+  $menuLinks: menu.querySelectorAll('.menu__link')
 });
 
 /***/ }),
@@ -151,18 +156,37 @@ __webpack_require__.r(__webpack_exports__);
 /*!***********************************!*\
   !*** ./src/js/components/menu.js ***!
   \***********************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-const hamburger = document.querySelector('.hero__hamburger'),
-  menu = document.querySelector('.menu'),
-  menuClose = document.querySelector('.menu__close');
-hamburger.addEventListener('click', () => {
-  menu.classList.add('active');
-});
-menuClose.addEventListener('click', () => {
-  menu.classList.remove('active');
-});
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
+
 console.log('Меню работает');
+function openMenu() {
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$hamburger.addEventListener('click', () => {
+    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$menu.classList.add('active');
+    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.overflow = 'hidden';
+  });
+}
+function closeMenu() {
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$menuClose.addEventListener('click', e => {
+    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$menu.classList.remove('active');
+    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.overflow = '';
+  });
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$overlay.addEventListener('click', e => {
+    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$menu.classList.remove('active');
+    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.overflow = '';
+  });
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$menuLinks.forEach(item => {
+    item.addEventListener('click', e => {
+      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$menu.classList.remove('active');
+      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.overflow = '';
+    });
+  });
+}
+openMenu();
+closeMenu();
 
 /***/ }),
 
