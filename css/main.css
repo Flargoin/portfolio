@@ -313,11 +313,13 @@ ul {
   position: absolute;
   width: 18px;
   height: 18px;
+  border-radius: 4px;
   opacity: 0;
 }
 .form__checkbox:checked + label::after {
-  background-image: url("../../img/svg/check.svg");
+  background-image: url("../img/svg/check.svg");
   background-color: var(--main-color);
+  border: none;
 }
 
 .sidepanel {
