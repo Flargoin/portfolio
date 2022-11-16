@@ -1124,6 +1124,9 @@ ul {
   background: var(--main-color);
   z-index: -1;
 }
+.contact__subtitle {
+  margin-top: 10px;
+}
 .contact .divider {
   margin: 20px 0 0 0;
 }

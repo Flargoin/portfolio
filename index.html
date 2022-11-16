@@ -20,25 +20,25 @@
     <main class="main">
       <div id="menu" class="menu">
     <div class="menu__block" tabindex="-1">
-        <div class="menu__close" tabindex="-1">
-          <svg class="">
+        <button class="btn-reset menu__close" tabindex="-1" aria-label="Закрыть меню">
+          <svg>
             <use xlink:href="img/sprite.svg#Close"></use>
           </svg>
-        </div>
+        </button>
         <nav class="menu__nav">
             <ul class="menu__list">
-                <li class="menu__link"><a href="#about">ПРО МЕНЯ</a></li>
-                <li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
-                <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
-                <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
-                <li class="menu__link"><a href="#price">ПРАЙС-ЛИСТ</a></li>
-                <li class="menu__link"><a href="#contact">КОНТАКТЫ</a></li>
+                <li class="menu__link"><a href="#about" aria-label="Перейти к разделу 'Про меня'">ПРО МЕНЯ</a></li>
+                <li class="menu__link"><a href="#resume" aria-label="Перейти к разделу 'Мой опыт'">МОЙ ОПЫТ</a></li>
+                <li class="menu__link"><a href="#skills" aria-label="Перейти к разделу 'Мои Навыки'">МОИ НАВЫКИ</a></li>
+                <li class="menu__link"><a href="#portfolio" aria-label="Перейти к разделу 'Мои работы'">МОИ РАБОТЫ</a></li>
+                <li class="menu__link"><a href="#price" aria-label="Перейти к разделу 'Прайс-лист'">ПРАЙС-ЛИСТ</a></li>
+                <li class="menu__link"><a href="#contact" aria-label="Перейти к разделу 'Контакты'">КОНТАКТЫ</a></li>
             </ul>
         </nav>
 
         <ul class="menu__social">
             <li class="menu__social-item">
-                <a target="_blank" href="https://github.com/Flargoin" class="menu__social-link">
+                <a target="_blank" href="https://github.com/Flargoin" class="menu__social-link" aria-label="Страница Github">
                   <svg>
                     <use xlink:href="img/sprite.svg#Github"></use>
                   </svg>
@@ -46,14 +46,14 @@
             </li>
             <!-- <li class="menu__social-item">
                 <a href="#" class="menu__social-link">
-                    <svg class="">
+                    <svg>
                       <use xlink:href="img/sprite.svg#Instagram"></use>
                     </svg>
                 </a>
             </li>
             <li class="menu__social-item">
                 <a href="#" class="menu__social-link">
-                    <svg class="">
+                    <svg>
                       <use xlink:href="img/sprite.svg#Facebook"></use>
                     </svg>
                 </a>
@@ -61,9 +61,7 @@
         </ul>
     </div>
 
-    <div class="menu__overlay">
-
-    </div>
+    <div class="menu__overlay"></div>
 </div>
 
       
@@ -76,8 +74,8 @@
       <div class="hero__subtitle title title--fz16">Меня зовут Сергей Романов</div>
       <h1 class="hero__title title title--fz48">Я web-разработчик из города Москва</h1>
       <div class="hero__btns">
-        <a class="hero__portfolio-btn main-btn" href="#portfolio">Портфолио</a>
-        <a class="hero__about-btn second-btn" href="#about">Про меня</a>
+        <a class="hero__portfolio-btn main-btn" href="#portfolio" aria-label="Перейти к списку работ">Портфолио</a>
+        <a class="hero__about-btn second-btn" href="#about" aria-label="Перейти к разделу 'Про меня'">Про меня</a>
       </div>
     </div>
   </div>
@@ -197,8 +195,8 @@
                             </div>
 
                             <div class="resume__item-body">
-                                Ссылка на курс: <a target="_blank" href="https://www.udemy.com/course/webdeveloper/">Тут</a><br>
-                                Ссылка на сертификат: <a target="_blank" href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-37248fbf-ba87-4521-9a30-e60931971bc7.pdf">Тут</a> <br>
+                                Ссылка на курс: <a target="_blank" href="https://www.udemy.com/course/webdeveloper/" aria-label="Ссылка на курс">Тут</a><br>
+                                Ссылка на сертификат: <a target="_blank" href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-37248fbf-ba87-4521-9a30-e60931971bc7.pdf" aria-label="Ссылка на сертификат">Тут</a> <br>
                             </div>
                         </div>
                     </li>
@@ -227,7 +225,7 @@
 
                             <div class="resume__item-body">
                                 Маркетинговое агенство по разработке сайтов для ресторанного бизнеса. <br>
-                                Ссылка на сайт компании: <a target="_blank" href="https://arora.pro/">Тут</a>
+                                Ссылка на сайт компании: <a target="_blank" href="https://arora.pro/" aria-label="Ссылка на сайт компании">Тут</a>
                             </div>
                         </div>
                     </li>
@@ -331,7 +329,7 @@
     <div class="divider"></div>
 
     <div class="portfolio__wrapper">
-      <a class="portfolio__item" href="#">
+      <a class="portfolio__item" href="#" aria-label="Проект Uber">
         <picture>
           <source srcset="./img/portfolio/uber.avif" type="image/avif">
           <source srcset="./img/portfolio/uber.webp" type="image/webp">
@@ -347,7 +345,7 @@
         </div>
       </a>
 
-      <a class="portfolio__item" href="#">
+      <a class="portfolio__item" href="#" aria-label="Проект Pulse">
         <picture>
           <source srcset="./img/portfolio/pulse.avif" type="image/avif">
           <source srcset="./img/portfolio/pulse.webp" type="image/webp">
@@ -363,7 +361,7 @@
         </div>
       </a>
 
-      <a class="portfolio__item" href="#">
+      <a class="portfolio__item" href="#" aria-lable="Проект Bread">
         <picture>
           <source srcset="./img/portfolio/bread.avif" type="image/avif">
           <source srcset="./img/portfolio/bread.webp" type="image/webp">
@@ -379,7 +377,7 @@
         </div>
       </a>
 
-      <a class="portfolio__item portfolio__item--vertical" href="#">
+      <a class="portfolio__item portfolio__item--vertical" href="#" aria-label="Проект Plans">
         <picture>
           <source srcset="./img/portfolio/plans.avif" type="image/avif">
           <source srcset="./img/portfolio/plans.webp" type="image/webp">
@@ -395,7 +393,7 @@
         </div>
       </a>
 
-      <a class="portfolio__item" href="#">
+      <a class="portfolio__item" href="#" aria-label="Проект IPad">
         <picture>
           <source srcset="./img/portfolio/ipad.avif" type="image/avif">
           <source srcset="./img/portfolio/ipad.webp" type="image/webp">
@@ -411,7 +409,7 @@
         </div>
       </a>
 
-      <a class="portfolio__item portfolio__item--horizontal" href="#">
+      <a class="portfolio__item portfolio__item--horizontal" href="#" aria-label="Проект Mac">
         <picture>
           <source srcset="./img/portfolio/mac.avif" type="image/avif">
           <source srcset="./img/portfolio/mac.webp" type="image/webp">
@@ -521,7 +519,7 @@
         <picture>
           <source srcset="./img/about-img.avif" type="image/avif">
           <source srcset="./img/about-img..webp" type="image/webp">
-          <img loading="lazy" src="./img/about-img.jpg" class="image" width="400" height="600" alt="photo">
+          <img loading="lazy" src="./img/about-img.jpg" class="image" alt="photo">
         </picture>
       </div>
 
@@ -536,7 +534,7 @@
           </p>
           <ul class="social contact__social-list" title="Социальные сети">
             <li class="social__item">
-              <a href="https://github.com/Flargoin" target="_blank" class="social__link social__link--fb" aria-label="Наша страничка в Фейсбуке">
+              <a href="https://github.com/Flargoin" target="_blank" class="social__link social__link--fb" aria-label="Страница Github">
                 <svg>
                   <use xlink:href="img/sprite.svg#Github"></use>
                 </svg>
@@ -568,25 +566,25 @@
         <form class="form contact__form" action="#">
           <div class="form__group">
             <label class="form__label" for="form__name">Ваше имя</label>
-            <input id="form__name" class="form__input" type="text" placeholder="Иван">
+            <input id="form__name" class="form__input" type="text" aria-label="Введите своё имя">
           </div>
 
           <div class="form__group">
             <label class="form__label" for="form__email">Ваша почта</label>
-            <input id="form__email" class="form__input" type="text">
+            <input id="form__email" class="form__input" type="text" aria-label="Введите свою электронную почту">
           </div>
 
           <div class="form__group form__textarea">
             <label class="form__label" for="form__text">Ваше сообщение</label>
-            <textarea id="form__text" name="text" cols="30" rows="10"></textarea>
+            <textarea id="form__text" name="text" cols="30" rows="10" aria-lable="Введите своё сообщение"></textarea>
           </div>
 
           <div class="form__bottom">
             <button class="main-btn form__btn">Отправить сообщение</button>
             <div class="form__group">
-              <input id="form__policy" class="form__checkbox" type="checkbox">
+              <input id="form__policy" class="form__checkbox" type="checkbox" aria-label="Поставив здесь галочку вы принимаете политику конфиденциальности">
               <label for="form__policy" class="form__label-check">
-                Я согласен(а) с <a target="_blank" href="/privacy.html">политикой конфиденциальности</a>
+                Я согласен(а) с <a target="_blank" href="./privacy.html" aria-label="Ссылка на политику конфиденциальности">политикой конфиденциальности</a>
               </label>
             </div>
           </div>
@@ -601,7 +599,7 @@
       <footer class="footer">
   <div class="container">
     <div class="footer__inner">
-      <a class="footer__policy" target="_blank" href="/privacy.html">
+      <a class="footer__policy" target="_blank" href="./privacy.html">
         Политика конфиденциальности
       </a>
 
