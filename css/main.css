@@ -315,6 +315,7 @@ ul {
   height: 18px;
   border-radius: 4px;
   opacity: 0;
+  z-index: 1;
 }
 .form__checkbox:checked + label::after {
   background-image: url("../img/svg/check.svg");
@@ -571,7 +572,7 @@ ul {
   width: 36px;
   height: 30px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 1;
 }
 .hero__hamburger span {
   display: block;
@@ -664,33 +665,14 @@ ul {
   margin-top: 20px;
 }
 
-.attainments {
+.advantages {
   margin-top: 40px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr 20px 1fr;
-  -ms-grid-columns: 1fr 50px 1fr;
-  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
-  grid-auto-rows: 1fr;
-  -webkit-column-gap: 50px;
-  -moz-column-gap: 50px;
-  column-gap: 50px;
-  row-gap: 20px;
 }
-.attainments__item {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 40px 200px;
-  grid-template-columns: 40px 200px;
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
-}
-.attainments__item-icon {
+.advantages__title {
   position: relative;
-  padding: 15px 0 0 15px;
+  text-align: center;
 }
-.attainments__item-icon::after {
+.advantages__title::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -704,20 +686,69 @@ ul {
   background: var(--main-color);
   z-index: -1;
 }
-.attainments__item-icon svg {
-  width: 25px;
-  height: 25px;
+.advantages__title:after {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.advantages__inner {
+  margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 30px 1fr;
+  -ms-grid-columns: 1fr 30px 1fr;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.advantages__item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 220px;
+  grid-template-columns: 50px 220px;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  background-color: var(--main-color);
+  padding: 15px;
+  border-radius: 10px;
+}
+.advantages__item-icon {
+  position: relative;
+  font-size: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-height: 50px;
+  background-color: #fff;
+  border-radius: 100%;
+  color: #000;
+}
+.advantages__item-icon svg {
+  width: 35px;
+  height: 35px;
   fill: #000;
 }
-.attainments__item-icon:after {
-  top: 18px;
+.advantages__item-title {
+  color: #fff;
 }
-.attainments__item-text {
+.advantages__item-text {
   margin-top: 5px;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 12px;
   line-height: 18px;
-  color: #000000;
+  color: #fff;
 }
 
 .resume {

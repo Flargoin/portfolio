@@ -167,22 +167,33 @@ function openMenu() {
   _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$hamburger.addEventListener('click', () => {
     _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$menu.classList.add('active');
     _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.overflow = 'hidden';
+    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.height = '100vh';
   });
 }
 function closeMenu() {
   _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$menuClose.addEventListener('click', e => {
     _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$menu.classList.remove('active');
     _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.overflow = '';
+    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.height = '';
   });
   _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$overlay.addEventListener('click', e => {
     _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$menu.classList.remove('active');
     _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.overflow = '';
+    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.height = '';
   });
   _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$menuLinks.forEach(item => {
     item.addEventListener('click', e => {
       _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$menu.classList.remove('active');
       _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.overflow = '';
+      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.height = '';
     });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.code == 'Escape') {
+      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$menu.classList.remove('active');
+      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.overflow = '';
+      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.height = '';
+    }
   });
 }
 openMenu();
