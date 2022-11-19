@@ -10,6 +10,8 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/menu */ "./src/js/components/menu.js");
+/* harmony import */ var _components_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/modal */ "./src/js/components/modal.js");
+
 
 
 /***/ }),
@@ -133,7 +135,12 @@ __webpack_require__.r(__webpack_exports__);
   $overlay: document.querySelector('.menu__overlay'),
   $menuClose: document.querySelector('.menu__close'),
   $body: document.querySelector('body'),
-  $menuLinks: menu.querySelectorAll('.menu__link')
+  $menuLinks: menu.querySelectorAll('.menu__link'),
+  $closeModal: document.querySelector('.modal__close'),
+  $btnModal: document.querySelectorAll('.modal__info-btn'),
+  $portfolioItem: document.querySelectorAll('.portfolio__item'),
+  $modalOverlay: document.querySelector('.overlay-modal'),
+  $modal: document.querySelector('.modal')
 });
 
 /***/ }),
@@ -198,6 +205,35 @@ function closeMenu() {
 }
 openMenu();
 closeMenu();
+
+/***/ }),
+
+/***/ "./src/js/components/modal.js":
+/*!************************************!*\
+  !*** ./src/js/components/modal.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
+
+_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$portfolioItem.forEach(item => {
+  item.addEventListener('click', e => {
+    e.preventDefault();
+    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modalOverlay.classList.add('overlay-modal--active');
+    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modal.classList.add('modal--active');
+    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.overflow = 'hidden';
+    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.height = '100vh';
+  });
+});
+_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$closeModal.addEventListener('click', e => {
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modalOverlay.classList.remove('overlay-modal--active');
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modal.classList.remove('modal--active');
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.overflow = '';
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.height = '';
+});
+console.log('модальное окно работает');
 
 /***/ }),
 
