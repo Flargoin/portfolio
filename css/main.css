@@ -81,6 +81,15 @@ ul {
   list-style-type: none;
 }
 
+.active {
+  display: block !important;
+}
+
+.noscroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
 .divider {
   width: 50px;
   height: 3px;
@@ -1540,6 +1549,9 @@ ul {
   width: 100%;
   background-color: #fff;
 }
+.modal__thanks, .modal__item, .modal__error {
+  display: none;
+}
 .modal__close {
   position: absolute;
   top: 5px;
@@ -1585,9 +1597,6 @@ ul {
   width: 180px;
   text-align: center;
 }
-.modal--active {
-  display: block;
-}
 
 .overlay-modal {
   position: fixed;
@@ -1601,8 +1610,5 @@ ul {
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
-}
-.overlay-modal--active {
-  display: block;
 }
 /*# sourceMappingURL=main.css.map */

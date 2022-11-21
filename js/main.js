@@ -140,7 +140,10 @@ __webpack_require__.r(__webpack_exports__);
   $btnModal: document.querySelectorAll('.modal__info-btn'),
   $portfolioItem: document.querySelectorAll('.portfolio__item'),
   $modalOverlay: document.querySelector('.overlay-modal'),
-  $modal: document.querySelector('.modal')
+  $modal: document.querySelector('.modal'),
+  $modalItem: document.querySelector('.modal__item'),
+  $modalAlert: document.querySelector('.modal__alert'),
+  $formBtn: document.querySelectorAll('.form__btn')
 });
 
 /***/ }),
@@ -218,21 +221,36 @@ closeMenu();
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
 
-_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$portfolioItem.forEach(item => {
-  item.addEventListener('click', e => {
-    e.preventDefault();
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modalOverlay.classList.add('overlay-modal--active');
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modal.classList.add('modal--active');
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.overflow = 'hidden';
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.height = '100vh';
+function openModal(trig, modal, activeClass, noScroll) {
+  trig.forEach(item => {
+    item.addEventListener('click', e => {
+      e.preventDefault();
+      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modalOverlay.classList.add(activeClass);
+      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modal.classList.add(activeClass);
+      modal.classList.add(activeClass);
+      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.classList.add(noScroll);
+    });
   });
-});
-_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$closeModal.addEventListener('click', e => {
-  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modalOverlay.classList.remove('overlay-modal--active');
-  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modal.classList.remove('modal--active');
-  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.overflow = '';
-  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.height = '';
-});
+}
+openModal(_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$portfolioItem, _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modalItem, 'active', 'noscroll');
+openModal(_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$formBtn, _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modalThanks, 'active', 'noscroll');
+function closeModal(trig, modal, activeClass, noScroll) {
+  trig.addEventListener('click', e => {
+    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modalOverlay.classList.remove(activeClass);
+    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modal.classList.remove(activeClass);
+    modal.classList.remove(activeClass);
+    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.classList.remove(noScroll);
+
+    /*
+        if(){
+          Нужно будет сделать проверку какой контент показывать, изменять текст в зависимости от прохождения проверки, валидации и т.п.
+        }
+    */
+  });
+}
+
+closeModal(_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$closeModal, _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modalItem, 'active', 'noscroll');
+closeModal(_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$closeModal, _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modalThanks, 'active', 'noscroll');
 console.log('модальное окно работает');
 
 /***/ }),
