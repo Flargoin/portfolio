@@ -143,7 +143,7 @@ __webpack_require__.r(__webpack_exports__);
   $modal: document.querySelector('.modal'),
   $modalItem: document.querySelector('.modal__item'),
   $modalAlert: document.querySelector('.modal__alert'),
-  $formBtn: document.querySelectorAll('.form__btn')
+  $formBtn: document.querySelector('.form__btn')
 });
 
 /***/ }),
@@ -222,35 +222,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
 
 function openModal(trig, modal, activeClass, noScroll) {
-  trig.forEach(item => {
-    item.addEventListener('click', e => {
-      e.preventDefault();
-      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modalOverlay.classList.add(activeClass);
-      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modal.classList.add(activeClass);
-      modal.classList.add(activeClass);
-      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.classList.add(noScroll);
-    });
+  trig.addEventListener('click', e => {
+    e.preventDefault();
+    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modalOverlay.classList.add(activeClass);
+    modal.classList.add(activeClass);
+    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.classList.add(noScroll);
   });
 }
-openModal(_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$portfolioItem, _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modalItem, 'active', 'noscroll');
-openModal(_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$formBtn, _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modalThanks, 'active', 'noscroll');
+openModal(_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$formBtn, _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modal, 'active', 'noscroll');
 function closeModal(trig, modal, activeClass, noScroll) {
   trig.addEventListener('click', e => {
     _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modalOverlay.classList.remove(activeClass);
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modal.classList.remove(activeClass);
     modal.classList.remove(activeClass);
     _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.classList.remove(noScroll);
-
-    /*
-        if(){
-          Нужно будет сделать проверку какой контент показывать, изменять текст в зависимости от прохождения проверки, валидации и т.п.
-        }
-    */
   });
+
+  /* С появлением валидации сделать проверку, исходя из которой будет меняться текстовое содержимое модального окна. */
 }
 
-closeModal(_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$closeModal, _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modalItem, 'active', 'noscroll');
-closeModal(_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$closeModal, _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modalThanks, 'active', 'noscroll');
+closeModal(_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$closeModal, _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modal, 'active', 'noscroll');
 console.log('модальное окно работает');
 
 /***/ }),

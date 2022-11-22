@@ -1549,8 +1549,9 @@ ul {
   width: 100%;
   background-color: #fff;
 }
-.modal__thanks, .modal__item, .modal__error {
-  display: none;
+.modal__content {
+  padding: 40px;
+  text-align: center;
 }
 .modal__close {
   position: absolute;
@@ -1565,37 +1566,12 @@ ul {
 .modal__close:hover {
   color: red;
 }
-.modal__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-.modal__info {
-  padding: 30px;
-}
-.modal__info-title a {
+.modal__title {
   color: var(--main-color);
+  text-transform: uppercase;
 }
-.modal__info-suptitle {
+.modal__text {
   margin-top: 10px;
-}
-.modal__info-descr {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #000;
-  font-weight: 500;
-}
-.modal__info-btn {
-  margin: 20px auto 0 auto;
-  display: block;
-  width: 180px;
-  text-align: center;
 }
 
 .overlay-modal {
