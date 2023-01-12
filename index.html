@@ -18,47 +18,16 @@
 <body class="page__body">
   <div class="site-container">
     <main class="main">
-      <div id="menu" class="menu">
-    <div class="menu__block" tabindex="-1">
-        <button class="btn-reset menu__close" tabindex="-1" aria-label="Закрыть меню">
-          <svg>
-            <use xlink:href="img/sprite.svg#Close"></use>
-          </svg>
-        </button>
-        <nav class="menu__nav">
-            <ul class="menu__list">
-                <li class="menu__link"><a href="#about" aria-label="Перейти к разделу 'Про меня'">ПРО МЕНЯ</a></li>
-                <li class="menu__link"><a href="#resume" aria-label="Перейти к разделу 'Мой опыт'">МОЙ ОПЫТ</a></li>
-                <li class="menu__link"><a href="#skills" aria-label="Перейти к разделу 'Мои Навыки'">МОИ НАВЫКИ</a></li>
-                <li class="menu__link"><a href="#portfolio" aria-label="Перейти к разделу 'Мои работы'">МОИ РАБОТЫ</a></li>
-                <li class="menu__link"><a href="#price" aria-label="Перейти к разделу 'Прайс-лист'">ПРАЙС-ЛИСТ</a></li>
-                <li class="menu__link"><a href="#contact" aria-label="Перейти к разделу 'Контакты'">КОНТАКТЫ</a></li>
-            </ul>
-        </nav>
-
-        <ul class="menu__social">
-            <li class="menu__social-item">
-                <a target="_blank" href="https://github.com/Flargoin" class="menu__social-link" aria-label="Страница Github">
-                  <svg>
-                    <use xlink:href="img/sprite.svg#Github"></use>
-                  </svg>
-                </a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="menu__overlay"></div>
-</div>
-
+      
       
       <section id="hero" class="hero">
-    <a class="hero__hamburger" aria-label="Открыть меню сайта" href="#">
+<!--     <a class="hero__hamburger" aria-label="Открыть меню сайта" href="#">
       <span></span>
-    </a>
+    </a> -->
   <div class="container">
     <div class="hero__content">
       <div class="hero__subtitle title title--fz16">Меня зовут Сергей Романов</div>
-      <h1 class="hero__title title title--fz48">Я web-разработчик из города Москва</h1>
+      <h1 class="hero__title title title--fz48">Я Junior Frontend Developer из города Москва</h1>
       <div class="hero__btns">
         <a class="hero__portfolio-btn main-btn" href="#portfolio" aria-label="Перейти к списку работ">Портфолио</a>
         <a class="hero__about-btn second-btn" href="#about" aria-label="Перейти к разделу 'Про меня'">Про меня</a>
@@ -80,248 +49,175 @@
             <div class="about__content">
                 <h2 class="about__subtitle title title--fz16">Про меня</h2>
                 <div class="about__title title title--fz36">Меня зовут Сергей</div>
+                <ul class="social" title="">
+                  <li class="social__item">
+                    <a href="https://github.com/Flargoin" target="_blank" class="social__link social__link--fb" aria-label="Страница Github">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#Github"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="https://t.me/K4rik4tur4" target="_blank" class="social__link social__link--fb" aria-label="Страница Github">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#tg"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="https://vk.com/k4rik4tur4" target="_blank" class="social__link social__link--fb" aria-label="Страница Github">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
                 <div class="divider"></div>
                 <p class="about__text">
-                 Я веб-разработчик, верстаю сайты различной сложности. Живу в Московской области.
+                 Я junior frontend разработчик, верстаю сайты различной сложности. <br>
+                 Работал во фронтенде в роли верстальщика на протяжении года. <br>
+                 В данный момент решаю задачи на codewars и прохожу курсы по JS и React <br>
                 </p>
-                <div class="about__advantages advantages">
-                    <div class="title title--fz20 advantages__title">
-                      Почему я?
-                    </div>
-                    <div class=" advantages__inner">
-
-                      <div class="advantages__item">
-                          <div class="advantages__item-icon">
-                            >1
-                          </div>
-                          <div class="advantages__info">
-                              <h3 class="advantages__item-title title title--fz20">года в разработке</h3>
-                              <div class="advantages__item-text">
-                                  Работал в маркетиновом агенстве по созданию сайтов для ресторанного бизнеса.
-                                  В компании было около 200 клиентов-ресторанов.
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="advantages__item">
-                          <div class="advantages__item-icon">
-                              <svg>
-                                <use xlink:href="img/sprite.svg#quality"></use>
-                              </svg>
-                          </div>
-                          <div class="advantages__info">
-                              <h3 class="advantages__item-title title title--fz20">Работаю на качество</h3>
-                              <div class="advantages__item-text">
-                                <!-- Переделать на список -->
-                                Стремлюсь к качественной работе.
-                                Делаю проверки:
-                                <ul>
-                                    <li>- Валидности</li>
-                                    <li>- Кроссбраузерности</li>
-                                    <li>- Адаптивности</li>
-                                    <li>- Производительности</li>
-                                    <li>- Доступности</li>
-                                </ul>
-                              </div>
-                          </div>
-                      </div>
-
-<!--                       <div class="advantages__item">
-                          <div class="advantages__item-icon">
-                              <svg>
-                                <use xlink:href="img/sprite.svg#book"></use>
-                              </svg>
-                          </div>
-                          <div class="advantages__info">
-                              <h3 class="advantages__item-title title title--fz20">Учусь новому</h3>
-                              <div class="advantages__item-text">
-                                  На данный момент прохожу курсы, друг за другом.
-                                  В приоритете JavaScript и React.
-                              </div>
-                          </div>
-                      </div> -->
-                  </div>
-                </div>
             </div>
         </div>
     </div>
 </section>
 
       <section id="resume" class="resume">
-    <div class="container">
-        <h2 class="title title--fz16 resume__title">Опыт</h2>
-        <div class="title title--fz36 resume__subtitle">Чем я буду полезен</div>
-        <div class="divider"></div>
-
-        <div class="resume__wrapper">
-            <div class="resume__column">
-                <h3 class="title title--fz20 resume__column-title">Образование</h3>
-
-
-                <ul>
-                    <li>
-                        <div class="resume__item">
-                            <div class="resume__item-head">
-                                <div class="resume__item-icon">
-                                    <svg class="">
-                                      <use xlink:href="img/sprite.svg#University"></use>
-                                    </svg>
-                                </div>
-                                <h4 class="title title--fz14 resume__item-title">
-                                    МГУТУ им. К.Г.Разумовского
-                                </h4>
-                                <div class="resume__item-location">
-                                    Не оконченно | Москва (2016-2020)
-                                </div>
-                            </div>
-                            <div class="resume__item-body">
-                                Специальность: Информационная безопасность автоматизированных систем.
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="resume__item">
-                            <div class="resume__item-head">
-                                <div class="resume__item-icon">
-                                    <svg class="">
-                                      <use xlink:href="img/sprite.svg#Courses"></use>
-                                    </svg>
-                                </div>
-                                <h4 class="title title--fz14 resume__item-title">
-                                    Udemy
-                                </h4>
-                                <div class="resume__item-location">
-                                    Курс "Web-разработчик 2021"
-                                </div>
-                            </div>
-
-                            <div class="resume__item-body">
-                                Ссылка на курс: <a target="_blank" href="https://www.udemy.com/course/webdeveloper/" aria-label="Ссылка на курс">Тут</a><br>
-                                Ссылка на сертификат: <a target="_blank" href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-37248fbf-ba87-4521-9a30-e60931971bc7.pdf" aria-label="Ссылка на сертификат">Тут</a> <br>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="resume__column">
-                <h3 class="title title--fz20 resume__column-title">Опыт работы</h3>
-
-                <ul>
-                    <li>
-                        <div class="resume__item">
-                            <div class="resume__item-head">
-                                <div class="resume__item-icon">
-                                    <svg class="">
-                                      <use xlink:href="img/sprite.svg#Developer"></use>
-                                    </svg>
-                                </div>
-                                <h4 class="title title--fz14 resume__item-title">
-                                    Верстальщик
-                                </h4>
-                                <div class="resume__item-location">
-                                    ARORA | Сергиев Посад (2020-2021)
-                                </div>
-                            </div>
-
-                            <div class="resume__item-body">
-                                Маркетинговое агенство по разработке сайтов для ресторанного бизнеса. <br>
-                                Ссылка на сайт компании: <a target="_blank" href="https://arora.pro/" aria-label="Ссылка на сайт компании">Тут</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-      <section id="skills" class="skills">
   <div class="container">
-    <h2 class="title title--fz16 skills__title">Навыки</h2>
-    <div class="title title--fz36 skills__subtitle">Что я использую в работе</div>
+    <h2 class="title title--fz16 resume__title">Опыт</h2>
+    <div class="title title--fz36 resume__subtitle">Чем я буду полезен</div>
     <div class="divider"></div>
 
-    <div class="skills__wrapper">
-      <div class="skills__item">
-        <img class="skills__item-img" src="./img/svg/html5.svg" alt="html5 logo">
+    <div class="resume__wrapper">
+      <div class="resume__column">
+        <h3 class="title title--fz20 resume__column-title">Образование</h3>
+        <ul>
+          <li>
+            <div class="resume__item">
+              <div class="resume__item-head">
+                <div class="resume__item-icon">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#University"></use>
+                  </svg>
+                </div>
+                <h4 class="title title--fz14 resume__item-title">
+                  УниКИТ
+                </h4>
+                <div class="resume__item-location">
+                  Не оконченно | Москва (2016-2020)
+                </div>
+              </div>
+              <div class="resume__item-body">
+                Информационная безопасность автоматизированных систем.
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="resume__item">
+              <div class="resume__item-head">
+                <div class="resume__item-icon">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#Courses"></use>
+                  </svg>
+                </div>
+                <h4 class="title title--fz14 resume__item-title">
+                  Udemy
+                </h4>
+                <div class="resume__item-location">
+                  Курс "Web-разработчик 2022"
+                </div>
+              </div>
 
-        <h3 class="title title--fz21 skills__item-title">
-          HTML5
-        </h3>
-        <p class="skills__item-text">
-          Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта
-        </p>
+              <div class="resume__item-body">
+                Ссылка на курс: <a target="_blank" href="https://www.udemy.com/course/webdeveloper/"
+                  aria-label="Ссылка на курс">Тут</a><br>
+                Ссылка на сертификат: <a target="_blank"
+                  href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-37248fbf-ba87-4521-9a30-e60931971bc7.pdf"
+                  aria-label="Ссылка на сертификат">Тут</a> <br>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="resume__item">
+              <div class="resume__item-head">
+                <div class="resume__item-icon">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#Courses"></use>
+                  </svg>
+                </div>
+                <h4 class="title title--fz14 resume__item-title">
+                  Udemy
+                </h4>
+                <div class="resume__item-location">
+                  Курс "Полный курс по JavaScript + React - с нуля до результата"
+                </div>
+              </div>
+
+              <div class="resume__item-body">
+                Ссылка на курс:
+                <a target="_blank" href="https://www.udemy.com/course/webdeveloper/" aria-label="Ссылка на курс">Тут</a><br>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="resume__item">
+              <div class="resume__item-head">
+                <div class="resume__item-icon">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#Courses"></use>
+                  </svg>
+                </div>
+                <h4 class="title title--fz14 resume__item-title">
+                  Udemy
+                </h4>
+                <div class="resume__item-location">
+                  Курс "Практический JavaScript(Продвинутый уровень)"
+                </div>
+              </div>
+
+              <div class="resume__item-body">
+                Ссылка на курс:
+                <a target="_blank" href="https://www.udemy.com/course/webdeveloper/" aria-label="Ссылка на курс">Тут</a><br>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
 
-      <div class="skills__item">
-        <img class="skills__item-img" src="./img/svg/css3.svg" alt="CSS3 logo">
+      <div class="resume__column">
+        <h3 class="title title--fz20 resume__column-title">Опыт работы</h3>
 
-        <h3 class="title title--fz21 skills__item-title">
-          CSS3
-        </h3>
-        <p class="skills__item-text">
-          Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!
-        </p>
-      </div>
+        <ul>
+          <li>
+            <div class="resume__item">
+              <div class="resume__item-head">
+                <div class="resume__item-icon">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#Developer"></use>
+                  </svg>
+                </div>
+                <h4 class="title title--fz14 resume__item-title">
+                  Верстальщик
+                </h4>
+                <div class="resume__item-location">
+                  ARORA | Сергиев Посад (2020 сентябрь - 2021 сентябрь)
+                </div>
+              </div>
 
-      <div class="skills__item">
-        <img class="skills__item-img" src="./img/svg/JS.svg" alt="JavaScript logo">
-
-        <h3 class="title title--fz21 skills__item-title">
-          Java Script
-        </h3>
-        <p class="skills__item-text">
-          Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое
-        </p>
-      </div>
-
-      <div class="skills__item">
-        <img class="skills__item-img" src="./img/svg/Jquery.svg" alt="Jquery logo">
-
-        <h3 class="title title--fz21 skills__item-title">
-          Jquery
-        </h3>
-        <p class="skills__item-text">
-          Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует
-        </p>
-      </div>
-
-      <div class="skills__item">
-        <img class="skills__item-img" src="./img/svg/React.svg" alt="React logo">
-
-        <h3 class="title title--fz21 skills__item-title">
-          React
-        </h3>
-        <p class="skills__item-text">
-          Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели
-        </p>
-      </div>
-
-      <div class="skills__item">
-        <img class="skills__item-img" src="./img/svg/Node.js.svg" alt="Nodejs logo">
-
-        <h3 class="title title--fz21 skills__item-title">
-          Node.js
-        </h3>
-        <p class="skills__item-text">
-          Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит
-        </p>
-      </div>
-
-      <div class="skills__item">
-        <img class="skills__item-img" src="./img/svg/Mongo.db.svg" alt="Mongo logo">
-
-        <h3 class="title title--fz21 skills__item-title">
-          Mongo.db
-        </h3>
-        <p class="skills__item-text">
-          Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения
-        </p>
+              <div class="resume__item-body">
+                Маркетинговое агенство по разработке сайтов для ресторанного бизнеса. <br>
+                Ссылка на сайт компании: <a target="_blank" href="https://arora.pro/"
+                  aria-label="Ссылка на сайт компании">Тут</a>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
+
 
       <section id="portfolio" class="portfolio">
   <div class="container">
@@ -330,262 +226,56 @@
     <div class="divider"></div>
 
     <div class="portfolio__wrapper">
-      <a class="portfolio__item" href="#" tabindex="0" aria-label="Проект Uber">
-        <picture>
-          <source srcset="./img/portfolio/uber.avif" type="image/avif">
-          <source srcset="./img/portfolio/uber.webp" type="image/webp">
-          <img loading="lazy" src="./img/portfolio/uber.jpg" class="image" width="280" height="280" alt="Uber site">
-        </picture>
+      <div class="portfolio__item">
+        <a href="/portfolio/Irvas/index.html" target="_blank">
+          <img loading="lazy" src="../img/Irvas.jpg" class="image" width="280" height="280" alt="Irvas">
         <div class="portfolio__item-inner">
           <h3 class="title title--fz20 portfolio__item-title">
-            Uber Taxi
+            Irvas
           </h3>
           <p class="portfolio__item-text">
-            Сайт где можно быстро и просто заказать такси
+            Окна и остекление балконов
           </p>
         </div>
-      </a>
-
-      <a class="portfolio__item" href="#" tabindex="0" aria-label="Проект Pulse">
-        <picture>
-          <source srcset="./img/portfolio/pulse.avif" type="image/avif">
-          <source srcset="./img/portfolio/pulse.webp" type="image/webp">
-          <img loading="lazy" src="./img/portfolio/pulse.jpg" class="image" width="280" height="280" alt="Uber site">
-        </picture>
+        </a>
+      </div>
+      <div class="portfolio__item">
+        <a href="/portfolio/Food/index.html" target="_blank">
+          <img loading="lazy" src="../img/Food.jpg" class="image" width="280" height="280" alt="Food">
         <div class="portfolio__item-inner">
           <h3 class="title title--fz20 portfolio__item-title">
-            Pulse
+            Food
           </h3>
           <p class="portfolio__item-text">
-            Сайт где можно подобрать пульсометр для ваших задач.
+            Сайт здорового питания
           </p>
         </div>
-      </a>
-
-      <a class="portfolio__item" href="#" tabindex="0" aria-label="Проект Bread">
-        <picture>
-          <source srcset="./img/portfolio/bread.avif" type="image/avif">
-          <source srcset="./img/portfolio/bread.webp" type="image/webp">
-          <img loading="lazy" src="./img/portfolio/bread.jpg" class="image" width="280" height="280" alt="Uber site">
-        </picture>
+        </a>
+      </div>
+      <div class="portfolio__item">
+        <a href="/portfolio/Picture/index.html" target="_blank">
+          <img loading="lazy" src="../img/Picture.jpg" class="image" width="280" height="280" alt="Picture">
         <div class="portfolio__item-inner">
           <h3 class="title title--fz20 portfolio__item-title">
-            Bread
+            Картины.art
           </h3>
           <p class="portfolio__item-text">
-            Сайт пекарни в г.Москва
+            Сайт для заказа портретов
           </p>
         </div>
-      </a>
-
-      <a class="portfolio__item portfolio__item--vertical" href="#" tabindex="0" aria-label="Проект Plans">
-        <picture>
-          <source srcset="./img/portfolio/plans.avif" type="image/avif">
-          <source srcset="./img/portfolio/plans.webp" type="image/webp">
-          <img loading="lazy" src="./img/portfolio/plans.jpg" class="image" alt="Uber site">
-        </picture>
-        <div class="portfolio__item-inner">
-          <h3 class="title title--fz20 portfolio__item-title">
-            Plans
-          </h3>
-          <p class="portfolio__item-text">
-            Сайт для удобного планирования дня.
-          </p>
-        </div>
-      </a>
-
-      <a class="portfolio__item" href="#" tabindex="0" aria-label="Проект IPad">
-        <picture>
-          <source srcset="./img/portfolio/ipad.avif" type="image/avif">
-          <source srcset="./img/portfolio/ipad.webp" type="image/webp">
-          <img loading="lazy" src="./img/portfolio/ipad.jpg" class="image" width="280" height="280" alt="Uber site">
-        </picture>
-        <div class="portfolio__item-inner">
-          <h3 class="title title--fz20 portfolio__item-title">
-            iPad
-          </h3>
-          <p class="portfolio__item-text">
-            Сайт для любителей техники Apple, а в частности IPad.
-        </div>
-      </a>
-
-      <a class="portfolio__item portfolio__item--horizontal" href="#" tabindex="0" aria-label="Проект Mac">
-        <picture>
-          <source srcset="./img/portfolio/mac.avif" type="image/avif">
-          <source srcset="./img/portfolio/mac.webp" type="image/webp">
-          <img loading="lazy" src="./img/portfolio/mac.jpg" class="image" alt="Uber site">
-        </picture>
-        <div class="portfolio__item-inner">
-          <h3 class="title title--fz20 portfolio__item-title">
-            Mac
-          </h3>
-          <p class="portfolio__item-text">
-            Сайт для любителей техники Apple, а в частности Mac.
-          </p>
-        </div>
-      </a>
+        </a>
+      </div>
     </div>
-  </div>
 </section>
 
-      <div id="price" class="price">
-  <div class="container">
-    <h2 class="title title--fz16 price__title">Прайс-лист</h2>
-    <div class="divider"></div>
-
-    <div class="price__wrapper">
-
-      <div class="price__item">
-        <div class="price__item-title">
-          Landing-page
-        </div>
-        <div class="price__item-value">
-          от 8000 руб.
-        </div>
-        <p class="price__item-descr">
-          Одностраничный сайт для презентации услуг/товаров/...
-        </p>
-      </div>
-
-      <div class="price__item">
-        <div class="price__item-title">
-          Корпоративный сайт
-        </div>
-        <div class="price__item-value">
-          от 20000 руб.
-        </div>
-        <p class="price__item-descr">
-          Сайт для вашего бизнеса или компании
-        </p>
-      </div>
-
-      <div class="price__item">
-        <div class="price__item-title">
-          Интернет-магазин
-        </div>
-        <div class="price__item-value">
-          от 30000 руб.
-        </div>
-        <p class="price__item-descr">
-          Инструмент для ваших продаж в сети
-        </p>
-      </div>
-
-      <div class="price__item">
-        <div class="price__item-title">
-          Web-приложение
-        </div>
-        <div class="price__item-value">
-          от 28000 руб.
-        </div>
-        <p class="price__item-descr">
-          Приложение внутри браузера для лучшего комфорта
-        </p>
-      </div>
-
-      <div class="price__item">
-        <div class="price__item-title">
-          Android/IOS Приложение
-        </div>
-        <div class="price__item-value">
-          от 25000 руб.
-        </div>
-        <p class="price__item-descr">
-          Приложение для смартфона любой ОС
-        </p>
-      </div>
-
-      <div class="price__item">
-        <div class="price__item-title">
-          Дизайн
-        </div>
-        <div class="price__item-value">
-          Индивидуально
-        </div>
-        <p class="price__item-descr">
-          Создам дизайн для вашего сайта/приложения...
-        </p>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-      <section id="contact" class="contact">
-  <div class="container">
-    <div class="contact__wrapper">
-
-      <div class="contact__img">
-        <picture>
-          <source srcset="./img/about-img.avif" type="image/avif">
-          <source srcset="./img/about-img..webp" type="image/webp">
-          <img loading="lazy" src="./img/about-img.jpg" class="image" alt="photo">
-        </picture>
-      </div>
-
-      <div class="contact__content">
-        <h2 class="title title--fz16 contact__title">Контакты</h2>
-        <div class="title title--fz36 contact__subtitle">Свяжитесь со мной</div>
-        <div class="divider"></div>
-
-        <div class="contact__social">
-          <p class="contact__text">
-            Любым удобным для вас способом:
-          </p>
-          <ul class="social contact__social-list" title="Социальные сети">
-            <li class="social__item">
-              <a href="https://github.com/Flargoin" target="_blank" class="social__link social__link--fb" aria-label="Страница Github">
-                <svg>
-                  <use xlink:href="img/sprite.svg#Github"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <p class="contact__text">
-          Или оставьте ваши данные и я сам вам напишу:
-        </p>
-
-        <form class="form contact__form" action="#">
-          <div class="form__group">
-            <label class="form__label" for="form__name">Ваше имя</label>
-            <input id="form__name" class="form__input" type="text" aria-label="Введите своё имя">
-          </div>
-
-          <div class="form__group">
-            <label class="form__label" for="form__email">Ваша почта</label>
-            <input id="form__email" class="form__input" type="text" aria-label="Введите свою электронную почту">
-          </div>
-
-          <div class="form__group form__textarea">
-            <label class="form__label" for="form__text">Ваше сообщение</label>
-            <textarea id="form__text" name="text" cols="30" rows="10" aria-label="Введите своё сообщение"></textarea>
-          </div>
-
-          <div class="form__bottom">
-            <button class="main-btn form__btn">Отправить сообщение</button>
-            <div class="form__group">
-              <input id="form__policy" class="form__checkbox" type="checkbox" aria-label="Поставив здесь галочку вы принимаете политику конфиденциальности">
-              <label for="form__policy" class="form__label-check">
-                Я согласен(а) с <a target="_blank" href="./privacy.html" aria-label="Ссылка на политику конфиденциальности">политикой конфиденциальности</a>
-              </label>
-            </div>
-          </div>
-        </form>
-      </div>
-
-    </div>
-  </div>
-</section>
 
     </main>
       <footer class="footer">
   <div class="container">
     <div class="footer__inner">
-      <a class="footer__policy" target="_blank" href="./privacy.html">
+<!--       <a class="footer__policy" target="_blank" href="./privacy.html">
         Политика конфиденциальности
-      </a>
+      </a> -->
 
       <div class="footer__social">
         <ul class="social" title="">
@@ -596,6 +286,20 @@
               </svg>
             </a>
           </li>
+          <li class="social__item">
+            <a href="https://t.me/K4rik4tur4" target="_blank" class="social__link social__link--fb" aria-label="Страница Github">
+              <svg>
+                <use xlink:href="img/sprite.svg#tg"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://vk.com/k4rik4tur4" target="_blank" class="social__link social__link--fb" aria-label="Страница Github">
+              <svg>
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -603,23 +307,7 @@
 </footer>
 
 
-      <div class="overlay-modal">
-  <div class="modal">
-    <div class="modal__dialog">
-      <div class="modal__alert modal__content">
-        <div class="modal__close">&times;</div>
-        <h2 class="title title--fz20 modal__title">
-          Спасибо за заявку!
-        </h2>
-        <p class="modal__text">
-          В ближайшее время я свяжусь с вами.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
+      
 
   </div>
 </body>

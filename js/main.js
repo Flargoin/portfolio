@@ -5,14 +5,11 @@
 /*!*******************************!*\
   !*** ./src/js/_components.js ***!
   \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/menu */ "./src/js/components/menu.js");
-/* harmony import */ var _components_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/modal */ "./src/js/components/modal.js");
-
-
+/* import './components/menu';
+import './components/modal';
+import './components/portfolio'; */
 
 /***/ }),
 
@@ -159,89 +156,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vendor/focus-visible.js */ "./src/js/vendor/focus-visible.js");
 /* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__);
 
-
-/***/ }),
-
-/***/ "./src/js/components/menu.js":
-/*!***********************************!*\
-  !*** ./src/js/components/menu.js ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
-
-console.log('Меню работает');
-function openMenu() {
-  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$hamburger.addEventListener('click', () => {
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$menu.classList.add('active');
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.overflow = 'hidden';
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.height = '100vh';
-  });
-}
-function closeMenu() {
-  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$menuClose.addEventListener('click', e => {
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$menu.classList.remove('active');
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.overflow = '';
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.height = '';
-  });
-  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$overlay.addEventListener('click', e => {
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$menu.classList.remove('active');
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.overflow = '';
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.height = '';
-  });
-  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$menuLinks.forEach(item => {
-    item.addEventListener('click', e => {
-      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$menu.classList.remove('active');
-      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.overflow = '';
-      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.height = '';
-    });
-  });
-  document.addEventListener('keydown', function (e) {
-    if (e.code == 'Escape') {
-      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$menu.classList.remove('active');
-      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.overflow = '';
-      _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.style.height = '';
-    }
-  });
-}
-openMenu();
-closeMenu();
-
-/***/ }),
-
-/***/ "./src/js/components/modal.js":
-/*!************************************!*\
-  !*** ./src/js/components/modal.js ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
-
-function openModal(trig, modal, activeClass, noScroll) {
-  trig.addEventListener('click', e => {
-    e.preventDefault();
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modalOverlay.classList.add(activeClass);
-    modal.classList.add(activeClass);
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.classList.add(noScroll);
-  });
-}
-openModal(_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$formBtn, _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modal, 'active', 'noscroll');
-function closeModal(trig, modal, activeClass, noScroll) {
-  trig.addEventListener('click', e => {
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modalOverlay.classList.remove(activeClass);
-    modal.classList.remove(activeClass);
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$body.classList.remove(noScroll);
-  });
-
-  /* С появлением валидации сделать проверку, исходя из которой будет меняться текстовое содержимое модального окна. */
-}
-
-closeModal(_vars__WEBPACK_IMPORTED_MODULE_0__["default"].$closeModal, _vars__WEBPACK_IMPORTED_MODULE_0__["default"].$modal, 'active', 'noscroll');
-console.log('модальное окно работает');
 
 /***/ }),
 
@@ -641,6 +555,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_vars */ "./src/js/_vars.js");
 /* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_functions */ "./src/js/_functions.js");
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./_components */ "./src/js/_components.js");
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components__WEBPACK_IMPORTED_MODULE_3__);
+
+
 
 
 

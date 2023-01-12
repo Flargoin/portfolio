@@ -1,0 +1,46 @@
+{
+    "portfolio": [
+      {
+        "link": "#",
+        "img": "./img/portfolio/uber.jpg",
+        "altimg": "Uber site",
+        "title": "Uber Taxi",
+        "descr": "Сайт где можно быстро и просто заказать такси"
+      },
+      {
+        "link": "#",
+        "img": "./img/portfolio/pulse.jpg",
+        "altimg": "Pulse site",
+        "title": "Pulse",
+        "descr": "Сайт где можно подобрать пульсометр для ваших задач."
+      },
+      {
+        "link": "#",
+        "img": "./img/portfolio/bread.jpg",
+        "altimg": "Bread site",
+        "title": "Bread",
+        "descr": "Сайт пекарни в г.Москва"
+      },
+      {
+        "link": "#",
+        "img": "./img/portfolio/plans.jpg",
+        "altimg": "Plans site",
+        "title": "Plans",
+        "descr": "Сайт для удобного планирования дня."
+      },
+      {
+        "link": "#",
+        "img": "./img/portfolio/ipad.jpg",
+        "altimg": "Ipad site",
+        "title": "Ipad",
+        "descr": "Сайт для любителей техники Apple, а в частности IPad."
+      },
+      {
+        "link": "#",
+        "img": "./img/portfolio/mac.jpg",
+        "altimg": "Mac site",
+        "title": "Mac",
+        "descr": "Сайт для любителей техники Apple, а в частности Mac."
+      }
+    ]
+}
